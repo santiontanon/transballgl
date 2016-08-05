@@ -1,0 +1,6 @@
+50 The Pulsar-A3 fires energy ripples
+550
+600 They are good for blocking/bullets and targeting enemies
+1100
+1150 But they have very low/destructive power
+1650 

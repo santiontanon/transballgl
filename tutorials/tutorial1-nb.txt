@@ -1,0 +1,4 @@
+50 The Nitro blaster has a very/powerful thruster
+650
+700 However, it's destructive/power is low.
+1000

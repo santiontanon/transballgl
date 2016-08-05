@@ -1,0 +1,9 @@
+100 The C-Harpoon has a hook/that holds the ball
+500
+550 You can make the chain/shorter or longer
+775
+800 by holding the [special] key/and pressing left or right
+1075
+1100 You can drop the ball by/pressing the attractor key
+1500
+
