@@ -1,6 +1,6 @@
 50 Use your thrusters to fight gravity
 200
-250 You can also spin the ship
+250 You can also rotate the ship
 550
 600 Shot the enemies to destroy them
 800 

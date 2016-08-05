@@ -93,7 +93,7 @@ void TGLapp::intro_draw(void)
 
 	if (m_state_cycle>=350 && m_state_cycle<650) {
 		float f1=(m_state_cycle-350)/300.0f;
-		m_GLTM->get("graphics/interface/transball.png")->draw(1,1,1,f1*f1,SCREEN_X/2,SCREEN_Y/2*(1-f1)+(SCREEN_Y/4)*f1,0, 0.25f-f1*0.25f ,2*(1-f1)+f1*0.5f);
+		m_GLTM->get("graphics/interface/transball.png")->draw(1,1,1,f1*f1,SCREEN_X/2,SCREEN_Y/2*(1-f1)+(SCREEN_Y/4)*f1,0, 15.0f-f1*15.0f ,2*(1-f1)+f1*0.5f);
 	} // if 
 
 	if (m_state_cycle>=650) {		
