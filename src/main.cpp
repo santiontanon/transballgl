@@ -337,6 +337,7 @@ void one_iter(void) {
             /* NICETOHAVE: a keyboard event handler that deals with key combos
                and sets certain status flags to deal with quit/fullscreen nicely */
             case SDL_KEYDOWN:
+#ifndef __EMSCRIPTEN__
 #ifdef __APPLE__
                 // different quit shortcut on OSX: apple+Q
                 if (event.key.keysym.scancode==SDL_SCANCODE_Q) {
@@ -361,7 +362,6 @@ void one_iter(void) {
                 if (event.key.keysym.scancode==SDL_SCANCODE_F12) {
                     quit = true;
                 } /* if */
-
                 
 #ifdef __APPLE__
                 if (event.key.keysym.scancode==SDL_SCANCODE_F) {
@@ -385,6 +385,7 @@ void one_iter(void) {
                         app->save_playerprofile();
                     } // if
                 } // if 
+#endif
 #endif
                 if (event.key.keysym.scancode==SDL_SCANCODE_F) {
                     SDL_Keymod modifiers;

@@ -66,14 +66,17 @@ int TGLapp::mainmenu_cycle(KEYBOARDSTATE *k)
 
         e=new TGLbuttonTransparent("EDITOR",m_ifont32,SCREEN_X/2 + 10,SCREEN_Y/2+40,160,30,6);
 		TGLinterface::add_element(e);
-#ifdef __EMSCRIPTEN__
-        TGLinterface::disable(6);
-#endif
-        
-		e=new TGLbuttonTransparent("HIGH SCORES",m_ifont32,SCREEN_X/2 - 170,SCREEN_Y/2+95,160,30,3);
+	
+        e=new TGLbuttonTransparent("HIGH SCORES",m_ifont32,SCREEN_X/2 - 170,SCREEN_Y/2+95,160,30,3);
 		TGLinterface::add_element(e);
 		TGLinterface::add_element(new TGLbuttonTransparent("REPLAYS",m_ifont32,SCREEN_X/2 + 10,SCREEN_Y/2+95,160,30,4));
 		TGLinterface::add_element(new TGLbuttonTransparent("QUIT",m_ifont32,SCREEN_X/2-80,SCREEN_Y/2+150,160,30,5));
+        
+#ifdef __EMSCRIPTEN__
+        TGLinterface::disable(6);
+        TGLinterface::disable(5);
+#endif
+        
 	} // if 
 
 	{
