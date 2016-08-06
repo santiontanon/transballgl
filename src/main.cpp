@@ -455,11 +455,13 @@ void one_iter(void) {
 
             k->clearEvents();
 
+#ifndef __EMSCRIPTEN__
             if (fs != current_fullscreen ||
                 sx != SCREEN_X ||
                 sy != SCREEN_Y) {
                 toogle_video_mode();
             }
+#endif
 
             act_time=SDL_GetTicks();
             max_frame_step--;
