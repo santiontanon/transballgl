@@ -30,7 +30,7 @@
 #endif
 
 #include "Symbol.h"
-#include "GLtile.h"
+#include "GLTile.h"
 
 #include "TGLobject.h"
 #include "collision.h"
