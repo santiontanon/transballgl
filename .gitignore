@@ -1,0 +1,12 @@
+# Binary (or testing) files
+#########################
+
+
+# OS X temporary files
+#########################
+.DS_Store
+.Trashes
+*.swp
+*.lock
+
+
