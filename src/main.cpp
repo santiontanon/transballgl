@@ -160,7 +160,11 @@ void init_video_mode()
         output_debug_message("Video mode set failed: %s\n",SDL_GetError());
         return;
     } // if
+    output_debug_message("Creating Open GL context...\n");
+
     glcontext = SDL_GL_CreateContext(appwindow);
+    
+    output_debug_message("Initializing shaders...\n");
     
     LoadShaders();
     
@@ -174,6 +178,9 @@ void init_video_mode()
     if (0!=SDL_GetDisplayDPI(0, &ddpi, &hdpi, &vdpi)) output_debug_message("SDL_GetDisplayDPI failed: %s\n",SDL_GetError());
     output_debug_message("Video mode changed. Desired was %i,%i, actual is %i,%i (DPIs are: %g, %g, %g)\n",SCREEN_X, SCREEN_Y, mode.w, mode.h, ddpi, hdpi, vdpi);
 #endif
+    
+    output_debug_message("Init video mode done!\n");
+    
 }
 
 
