@@ -22,6 +22,8 @@
 #include "SDL_ttf.h"
 #endif
 
+#include <algorithm>
+
 #include "Symbol.h"
 #include "BB2D.h"
 #include "auxiliar.h"
