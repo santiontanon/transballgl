@@ -4,7 +4,6 @@
 class TGLobject_ship_dodger : public TGLobject_ship {
 public:
 	TGLobject_ship_dodger(float x,float y,int initial_fuel);
-	virtual ~TGLobject_ship_dodger();
 
 	virtual bool is_a(char *n);
 	virtual bool is_a(Symbol *n);

@@ -4,7 +4,6 @@
 class TGLobject_ship_pulsar : public TGLobject_ship {
 public:
 	TGLobject_ship_pulsar(float x,float y,int initial_fuel);
-	virtual ~TGLobject_ship_pulsar();
 
 	virtual bool is_a(char *n);
 	virtual bool is_a(Symbol *n);

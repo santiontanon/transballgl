@@ -61,11 +61,6 @@ TGLobject_ship_dflecter::TGLobject_ship_dflecter(float x,float y,int initial_fue
 
 TGLobject_ship_dflecter::~TGLobject_ship_dflecter()
 {
-	if (m_thrust_channel!=-1) {
-		Mix_HaltChannel(m_thrust_channel);
-		m_thrust_channel=-1;
-	} // if
-    
 //    if (m_shield!=0) delete m_shield;
     m_shield = 0;
 

@@ -54,16 +54,6 @@ TGLobject_ship_shadowrunner::TGLobject_ship_shadowrunner(float x,float y,int ini
 } /* TGLobject_ship_shadowrunner::TGLobject_ship */ 
 
 
-TGLobject_ship_shadowrunner::~TGLobject_ship_shadowrunner()
-{
-	if (m_thrust_channel!=-1) {
-		Mix_HaltChannel(m_thrust_channel);
-		m_thrust_channel=-1;
-	} // if 
-
-} /* TGLobject_ship_shadowrunner::~TGLobject_ship */ 
-
-
 bool TGLobject_ship_shadowrunner::cycle(VirtualController *k,TGLmap *map,GLTManager *GLTM,SFXManager *SFXM,int sfx_volume)
 {
 	m_cycle++;

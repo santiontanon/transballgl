@@ -2,17 +2,27 @@
 <head>
   <title>Transball GL</title>
   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<style>
+b {
+    font-weight: bold;
+    color: white;
+}
+a {
+    color: #aaaaff;
+}
+</style>  
 </head>
 
-<body style="background-color:black;color:white">
-<div align="center"><img src="images/tgl-logo.jpg" alt="TITTLE SCREEN" width="320"></div>
-<br>
-"Transbal GL" is the sequel of <a href="../stransball2">Super Transball 2</a>, 
+<body style="background-color:black;color:#cccccc">
+<div align="center"><img src="images/tgl-logo.jpg" alt="TITTLE SCREEN" width="320"></div><br>
+"Transbal GL" is the sequel of <a href="http://www.braingames.getput.com/stransball2/default.asp">Super Transball 2</a>, 
 Inspired in <b>thrust</b>b> type of games (and concretely in <b>Zara Thrusta</b> for the Amiga 500). In each level of Transball, the goal is to find the <b>sphere</b>, capture it and carry it to the upper part of the level. The main  obstacle is gravity, that pulls you towards the ground. But many other obstacles such as canons, tanks, lasers, etc. will try to make your journey difficult...<br>
 <br>
 As previous Transball games, <b>Transball GL is not an easy game</b>, you will need lots of practice to unlock all the ships and complete all the levels!<br>
 <br>
 <div align="center"><b>You can watch a Youtube video of the game <a href="https://www.youtube.com/watch?v=AtKwU0hJL50">here</a></b></div>
+<br>
+<div align="center">Transball GL is open-source, you can find all the code/data of the game in its <a href="https://github.com/santiontanon/transballgl">github page</a>.</div>
 <br>
 <hr>
 <h2>How to Play</h2>
@@ -20,7 +30,7 @@ As previous Transball games, <b>Transball GL is not an easy game</b>, you will n
 In Transball, you control a small ship through a series of levels. In each level, you need to find the <b>sphere</b>, and take it all the way to the top of the level. The main problem is that if you ship touches anything, it will be destroyed. So, you need to avoid colliding with walls, bullets, lasers, etc. Gravity always pulls you downwards, and you need to use your thrusters to prevent your ship from crashing into the ground, as well as for navigating through the level.
 
 The controls of the game are shown in the following screenshot (they are all configurable through the <b>Options</b> screen accessible both from the main menu, and during game).
-<div align="center"><img src="images/tgl-options.png" alt="OPTIONS SCREEN" width="640"></div>
+<div align="center"><img src="images/tgl-options.png" alt="OPTIONS SCREEN" width="640"></div><br>
 Controls:
 <ul>
 <li><b>Thrust</b>: propels your ship forward. Look out, since thrusting uses fuel, and you only have a limited amount (fuel is displayed at the top-left of the screen).</li>
@@ -69,7 +79,78 @@ Transball GL lets you load different level packs. A level pack is a set of level
 Each time you finish a game (whether you beat the level or not), you will have the opportunity to save the replay. Select the "replays" option from the main menu to see all the replays you saved. Replays of the best games you play in each level are saved automatically, and can be accessed directly from the level selection screen<br>
 <br>
 <hr>
-<h2>Map Editor</h2>
+<h2>Editor</h2>
+
+Transball GL comes built-in with an editor with which you can create your own level packs. To access the editor, select the "editor" option in the main menu. There are two main parts to the editor: the level pack editor, and the map editor.<br>
+<br>
+<h3>Level Pack Editor</h3>
+When you first select the editor, you will see the level pack editor, which looks like this:<br>
+<div align="center"><img src="images/editor-levelpack.png" alt="LEVEL PACK EDITOR" width="634"></div><br>
+In this screen, you can:
+<ul>
+<li><b>Load and Save</b>: you will start with an empty level pack. But you can load an existing one, or save the current one you are editing with the buttons in the bottom of the screen.</li>
+<li><b>Level Pack Properties</b>: a level pack has three main properties. An "id" (which is the name of the folder under which it will be stored; all level packs must have a unique ID), a "name", and a "description" (a longer text that describes the level pack).</li>
+<li><b>Set of levels</b>: in the middle-left of the screen you see the current list of levels in the level pack. One of them might be highlighted in green, meaning it is the currently selected one. When you have a level selected, you will see it's properties on the top-right, and the "edit" button on the right will be highlighted, meaning you can go to the map editor to edit this level. You can add and delete levels with the buttons on the right part of the screen.</li>
+<li><b>Change level properties</b>: levels have 5 properties. The first is the order in which they appear. You can move a level up or down with the "up"/"down" buttons on the right. Each level also has a "name" and a "description" that will be displayed before a player plays the level. Finally, you must also specify how many points do players get for completing the level, and the percentage of fuel with which they start the level.</li>
+<li><b>Edit a level</b>: when you want to edit a map, just click on the large "edit" button on the right, which will take you to the map editor.
+</ul>
+
+<h3>Map Editor</h3>
+When you enter into the map editor, you will see something like this:<br>
+<div align="center"><img src="images/editor-tiles.png" alt="MAP EDITOR" width="634"></div><br>
+In this screen, you can:
+<ul>
+<li><b>Change the map dimensions</b>: on the top-left you will see the current size of the map in width and height. You can make a map larger or smaller by clicking on the small arrows</li>
+<li><b>Background</b>: maps can have different background themes (rock, snow, techno, etc.). You can cycle through the themes by clicking on the "background" button on the left.</li>
+<li><b>Navigate through the map</b>: to move around in the editor, you can use the arrow keys in your keyboard, or move the mouse to the edges of the screen. You can also zoom in and out by pressing "page up" or "page down" in your keyboard, or pressing the "in"/"out" buttons on the top-left.</li>
+<li><b>Accept/cancel</b>: these two buttons on the bottom-left of the screen let you accept all the changes you did in the map and go back to the level pack editor, or cancel the changes and go back to the level pack editor.</li>
+<li><b>Load/Save a copy of a map</b>: you can save a map independently of a level pack by clicking on the "save copy" button. You can later load that map again by clicking on the "load" button. Also, you can save an image of the current level by pressing "save PNG", useful for showing off your level.</li>
+<li><b>Editing the map!</b>: described in more detail below.</li>
+</ul>
+
+Maps are composed of three layers:<br>
+<ul>
+<li><b>Background</b>: a theme displayed on the back of the level for decoration purposes only (can be changed with the "background" button on the left).</li>
+<li><b>Foreground</b>: composed of a grid of "tiles", making the bulk of the level. The foreground contains all static objects such as walls of the level.</li>
+<li><b>Objects</b>: all the parts of the level that are active (e.g., tiles with animations, enemies, doors, switches, etc.).</li>
+</ul>
+
+To edit each of the different layers of a map, the editor has four "modes" of operation, which you can change by clicking on the "mode" button on the left:<br>
+<ul>
+<il><b>Tiles</b>: allows you to edit the foreground layer. You will have a palette of all the available tiles (left part of the screen). Select one with the mouse, and you can then click anywhere in the map to start placing tiles. You can navigate the tile palette with the Q/A keys, or by scrolling up and down with your mouse. To delete a tile, just hover over it with the mouse, and press the "backspace" key in your keyboard.</il>
+<il><b>Objects</b>: allows you to add objects (such as enemies). Similarly to th tiles mode, you will see a list of all the objects. Select them and start placing them in the map. You can delete objects by hovering over them (you will see a red square around them) and then pressing "backspace".</il>
+<il><b>Properties</b>: some objects have properties, such as which doors are open by each button, etc. This mode lets you change these properties. To change a property press (in your keyboard) the number listed to the left of the property in screen (to decrease its value, hold "shift" while pressing the number). The properties that you can change are:
+<ul>
+<li><b>A0</b>: the animation offset (if you want the animation of some objects to start at a different animation frame).</li>
+<li><b>ID</b>: the "ID" of the object (for doors and switches). A door with "ID = 0" will activate the instant you grab the ball. A door with an "ID" higher than 0, will activate when you press a button with ID equal to "door ID - 1".</li>
+<li><b>IS</b>: initial state of the door (whether it starts open or closed).</li>
+</ul>
+
+</il>
+
+
+<il><b>Smart</b>: fitting tiles right next to each other to compose a map can be a tedious task. The smart mode tries to make it easier by automatically matching tiles that fit those that are already there in the map. Use this at the beginning of starting to create a level to get the rough structure of your level done, and then refine it with the tile mode. There are three settings for the "smart" mode: rock, snow and techno. Select one of them and start drawing. Moreover, notice that sometimes the smart mode might get things wrong (this is because it selects tiles automatically based on color matching the edges of tiles, and it might sometimes not do what you expect).</il>
+</ul>
+
+
+<h3>Folder Structures</h3>
+
+To prevent users from accidentally editing the main level packs of Transball GL and messing up the game, the maps you edit and the maps you play are stored in separate folders. Once you have created a level pack you like, and you want to play, you can just move it to the appropriate folder by hand.<br>
+<br>
+The folder structure Transball GL creates is as follows:<br>
+<ul>
+<li><b>Unix Systems (OS X/Linux)</b>: the first time you launch the game, Transball GL will create a folder called ".transballGL" in your home, that contains all of your data. </li>
+<li><b>Windows</b>: in windows, no such folder is created, and all the data lives directly in the folder where you copied the game on to your computer.</li>
+<li>You should be aware of the following subfolders:
+<ul>
+  <li><b>maps</b>: lives in the folder where you installed the game regardless of whether it's Unix or Windows. This is the folder from where you load level packs to play the game. If you have created a level pack you think it's ready to play, just copy it here (a level pack consists of a main file, and a folder with the same name). In OS X, this folder will be <b>inside</b> of the application bundle, just right click the app, and select "show contents".</li>
+  <li><b>mymaps</b>: this is the folder that the map editor uses to save the maps/level packs you create. This lives in ".transballGL" in Unix, or in the game folder in Windows.</li>
+  <li><b>replays</b>: contains all the replays you saved. This lives in ".transballGL" in Unix, or in the game folder in Windows.</li>
+  <li><b>players</b> and <b>other-players</b>: the players folder contains your player profiles and stores all the replays corresponding to your highscores. The "other-players" folder is used to store info from other players (in the future when there is on-line sychronization, this will contain the highscores of the top players on-line), it's empty for now, but you can manually copy player data from your friends there if you want, and this will show up in the highscores. These live in ".transballGL" in Unix, or in the game folder in Windows.</li>
+</ul>
+</li>
+</ul>
+
 
 
 </body>

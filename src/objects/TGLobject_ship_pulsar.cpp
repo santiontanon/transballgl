@@ -53,15 +53,6 @@ TGLobject_ship_pulsar::TGLobject_ship_pulsar(float x,float y,int initial_fuel) :
 } /* TGLobject_ship_pulsar::TGLobject_ship_pulsar */ 
 
 
-TGLobject_ship_pulsar::~TGLobject_ship_pulsar()
-{
-	if (m_thrust_channel!=-1) {
-		Mix_HaltChannel(m_thrust_channel);
-		m_thrust_channel=-1;
-	} // if 
-} /* TGLobject_ship_pulsar::~TGLobject_ship_pulsar */ 
-
-
 bool TGLobject_ship_pulsar::cycle(VirtualController *k,TGLmap *map,GLTManager *GLTM,SFXManager *SFXM,int sfx_volume)
 {
 	m_cycle++;

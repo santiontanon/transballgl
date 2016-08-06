@@ -4,7 +4,6 @@
 class TGLobject_ship_accura : public TGLobject_ship {
 public:
 	TGLobject_ship_accura(float x,float y,int initial_fuel);
-	virtual ~TGLobject_ship_accura();
 
 	virtual bool is_a(char *n);
 	virtual bool is_a(Symbol *n);

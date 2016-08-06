@@ -53,16 +53,6 @@ TGLobject_ship_xterminator::TGLobject_ship_xterminator(float x,float y,int initi
 } /* TGLobject_ship_xterminator::TGLobject_ship */ 
 
 
-TGLobject_ship_xterminator::~TGLobject_ship_xterminator()
-{
-	if (m_thrust_channel!=-1) {
-		Mix_HaltChannel(m_thrust_channel);
-		m_thrust_channel=-1;
-	} // if 
-
-} /* TGLobject_ship_xterminator::~TGLobject_ship */ 
-
-
 bool TGLobject_ship_xterminator::cycle(VirtualController *k,TGLmap *map,GLTManager *GLTM,SFXManager *SFXM,int sfx_volume)
 {
 	m_cycle++;

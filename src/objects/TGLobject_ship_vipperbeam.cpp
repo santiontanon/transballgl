@@ -58,11 +58,6 @@ TGLobject_ship_vipperbeam::TGLobject_ship_vipperbeam(float x,float y,int initial
 
 TGLobject_ship_vipperbeam::~TGLobject_ship_vipperbeam()
 {
-	if (m_thrust_channel!=-1) {
-		Mix_HaltChannel(m_thrust_channel);
-		m_thrust_channel=-1;
-	} // if 
-
 	if (m_laser_channel!=-1) {
 		Mix_HaltChannel(m_laser_channel);
 		m_laser_channel=-1;

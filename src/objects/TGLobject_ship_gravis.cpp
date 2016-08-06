@@ -60,11 +60,6 @@ TGLobject_ship_gravis::TGLobject_ship_gravis(float x,float y,int initial_fuel) :
 
 TGLobject_ship_gravis::~TGLobject_ship_gravis()
 {
-	if (m_thrust_channel!=-1) {
-		Mix_HaltChannel(m_thrust_channel);
-		m_thrust_channel=-1;
-	} // if 
-
 	if (m_attracting_channel!=-1) {
 		Mix_HaltChannel(m_attracting_channel);
 		m_attracting_channel=-1;

@@ -54,16 +54,6 @@ TGLobject_ship_nitroblaster::TGLobject_ship_nitroblaster(float x,float y,int ini
 } /* TGLobject_ship_nitroblaster::TGLobject_ship */ 
 
 
-TGLobject_ship_nitroblaster::~TGLobject_ship_nitroblaster()
-{
-	if (m_thrust_channel!=-1) {
-		Mix_HaltChannel(m_thrust_channel);
-		m_thrust_channel=-1;
-	} // if 
-
-} /* TGLobject_ship_nitroblaster::~TGLobject_ship */ 
-
-
 bool TGLobject_ship_nitroblaster::cycle(VirtualController *k,TGLmap *map,GLTManager *GLTM,SFXManager *SFXM,int sfx_volume)
 {
 	m_cycle++;
