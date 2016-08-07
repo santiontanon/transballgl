@@ -164,6 +164,21 @@ void init_video_mode()
 
     glcontext = SDL_GL_CreateContext(appwindow);
     
+#ifndef __APPLE__
+#ifndef __EMSCRIPTEN__
+    glewExperimental = GL_TRUE;
+    if (glewInit()!=GLEW_OK) {
+        output_debug_message("glewInit failed!\n");
+        return;
+    }
+    if (!GLEW_VERSION_2_1) {
+        output_debug_message("glew does not support 2.1 extensions!\n");
+        exit(1);
+    }
+    output_debug_message("glew initialized\n");
+#endif
+#endif
+    
     output_debug_message("Initializing shaders...\n");
     
     LoadShaders();
@@ -200,21 +215,6 @@ void initialization(int flags)
         output_debug_message("SDL initialized\n");
         init_video_mode();
         //    SDL_Renderer *renderer = SDL_CreateRenderer(screen, -1, 0);
-        
-#ifndef __APPLE__
-#ifndef __EMSCRIPTEN__
-        glewExperimental = GL_TRUE;
-        if (glewInit()!=GLEW_OK) {
-            output_debug_message("glewInit failed!\n");
-            return;
-        }
-        if (!GLEW_VERSION_2_1) {
-            output_debug_message("glew does not support 2.1 extensions!\n");
-            exit(1);
-        }
-        output_debug_message("glew initialized\n");
-#endif
-#endif
         
         if (sound) {
             output_debug_message("Initializing Audio\n");
