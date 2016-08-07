@@ -1,0 +1,1 @@
+g++ -O3 -std=c++11 src/*.cpp src/auxiliar/*.cpp src/interface/*.cpp src/objects/*.cpp src/states/*.cpp -I src -I src/auxiliar -I src/interface -I src/objects -I /usr/include/SDL2 -lGLEW -lGL -lGLU -lSDL2main -lSDL2 -lSDL2_mixer -lSDL2_image -lSDL2_ttf -lz -lm -D GLM_FORCE_RADIANS -o tgl
