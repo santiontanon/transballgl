@@ -5,6 +5,11 @@
 #define M_PI	3.141592654F
 #endif
 
+#ifndef __INT_MAX__
+#define __INT_MAX__	INT_MAX
+#endif
+
+
 #include "SDL.h"
 #include<list>
 #include<vector>

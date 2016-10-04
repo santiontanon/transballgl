@@ -132,6 +132,7 @@ int TGLapp::savemap_cycle(KEYBOARDSTATE *k)
 			/* Find files: */
 			WIN32_FIND_DATA finfo;
 			HANDLE h;
+			char tmp_path[4096], *tmp;
 
 			sprintf(tmp_path,"%s/*.*",m_mb_current_path);
 

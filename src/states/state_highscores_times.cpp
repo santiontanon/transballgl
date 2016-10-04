@@ -72,6 +72,7 @@ int TGLapp::highscores_times_cycle(KEYBOARDSTATE *k)
 				/* Find files: */
 				WIN32_FIND_DATA finfo;
 				HANDLE h;
+				char *tmp;
 
 				h = FindFirstFile(TGL_PLAY_MAPS_FOLDER "/*.lp", &finfo);
 				if (h != INVALID_HANDLE_VALUE) {

@@ -54,7 +54,7 @@
 
 #include "debug.h"
 
-extern char *application_version;
+extern const char *application_version;
 
 
 const char *objects_to_ignore[]={"TGLobject_ballstand",

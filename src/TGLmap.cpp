@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "math.h"
 #include "string.h"
+#include <algorithm>
 
 #ifdef __APPLE__
 #include "OpenGL/gl.h"

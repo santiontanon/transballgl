@@ -177,8 +177,8 @@ void TGLobject_ship_shield::generate_shield_textures(void)
 					for(x=0;x<64;x++) {
 						for(y=0;y<64;y++) {
 							angle=float(atan2((double)(y-32),(double)(x-32)));
-							if (angle<0) angle+=M_PI*2;
-							angle/=(M_PI*2)/SHIELD_N_NODES;
+							if (angle<0) angle+=float(M_PI*2);
+							angle/=float((M_PI*2)/SHIELD_N_NODES);
 							r1=int(angle);
 							cr2=float(angle)-r1;
 							cr1=1-cr2;

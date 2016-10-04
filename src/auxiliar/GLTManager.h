@@ -8,7 +8,7 @@ public:
 	GLTManagerImageNode(SDL_Surface *a_surface, class Symbol *m_fileName);
 	~GLTManagerImageNode();
 
-	class SDL_Surface *m_surface;
+	struct SDL_Surface *m_surface;
 	Symbol *m_fileName;
     GLuint m_tex;
     float m_tx, m_ty;
