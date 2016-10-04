@@ -20,7 +20,7 @@ Demo video can be found here: https://www.youtube.com/watch?v=AtKwU0hJL50
 
 You can play directly in your browser here (without sound, and with the editor disabled unfortunately): https://dl.dropboxusercontent.com/u/3303662/BrainGames/transballgl/TGL.html
 
-Precompiled versions for Mac, Linux and Windows will be available shortly.
+Precompiled versions for Mac, Linux and Windows are available from the "Releases" tab: https://github.com/santiontanon/transballgl/releases
 
 If you liked transball, check:
 - Transball GL at Brain Games: http://www.braingames.getput.com/transballgl/default.asp
