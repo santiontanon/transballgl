@@ -127,7 +127,7 @@ bool TGLobject_directionalcannon_up::cycle(VirtualController *k,class TGLmap *ma
 void TGLobject_directionalcannon_up::draw(glm::mat4 transform, class GLTManager *GLTM)
 {
 	if (m_state==0) m_last_tile=GLTM->get("graphics/objects/directionalcannon1.png");
-	if (m_state==1) m_last_tile=GLTM->get("ographics/bjects/directionalcannon1.png");
+	if (m_state==1) m_last_tile=GLTM->get("graphics/objects/directionalcannon1.png");
 	if (m_state>124) m_last_tile=GLTM->get("graphics/objects/directionalcannon2.png");
 	if (m_state>120 && m_state<=124) m_last_tile=GLTM->get("graphics/objects/directionalcannon3.png");
 	if (m_state>116 && m_state<=120) m_last_tile=GLTM->get("graphics/objects/directionalcannon2.png");
