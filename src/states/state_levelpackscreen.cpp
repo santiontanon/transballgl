@@ -116,12 +116,12 @@ int TGLapp::levelpackscreen_cycle(KEYBOARDSTATE *k)
 
 				time=m_player_profile->get_besttime(m_current_levelpack->m_id,i+m_lp_first_level,m_selected_ship);
 				if (time==-1) {
-					sprintf(tmp,"Best Time:: --:--:--");
+					sprintf(tmp,"Best Time: --:--:--");
 				} else {
 					int hunds=(time/10)%100;
 					int secs=(time/1000)%60;
 					int mins=time/60000;
-					sprintf(tmp,"Best Time:: %i:%.2i:%.2i",mins,secs,hunds);
+					sprintf(tmp,"Best Time: %i:%.2i:%.2i",mins,secs,hunds);
 				} // if 
 				m_lp_level_time[i]=new TGLText(tmp,m_font16,30,float(220+i*90),false);
 				sprintf(tmp,"Points: %i [%i]",level->m_points,level->m_points*m_player_profile->number_of_times_completed(m_current_levelpack->m_id,i+m_lp_first_level));
