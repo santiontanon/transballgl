@@ -3,7 +3,7 @@
   <name>Expert Pack</name>
   <description>Set of levels just for experts</description>
   <creator>
-    <name>Santiago Ontañón Villar</name>
+    <name>Santiago OntaÃ±Ã³n Villar</name>
     <nickname>Popolon</nickname>
   </creator>
   <levels>
@@ -22,7 +22,7 @@
     <level>
       <map>expert-level3.tgl</map>
       <name>Master dodger</name>
-      <description>This level is difficult. Really difficult./But if you believe you are an expert it should/be a piece of cake!</description>
+      <description>This level is difficult. Really difficult./But if you believe you are an expert, it should/be a piece of cake!</description>
       <points>7</points>
     </level>
     <level>

@@ -9,7 +9,7 @@
     <level>
       <map>level1.tgl</map>
       <name>A new start</name>
-      <description>Wellcome to Transball GL! The goal in this game is "simple"./Just try to take the ball and escape.</description>
+      <description>Welcome to Transball GL! The goal in this game is "simple"./Just try to take the ball and escape.</description>
       <points>1</points>
     </level>
     <level>
@@ -26,26 +26,26 @@
     </level>
     <level>
       <map>level4.tgl</map>
-      <name>Enemy canons</name>
-      <description>Cannons will try to take yo down./However you can destroy them with the weapons of your ship.</description>
+      <name>Enemy cannons</name>
+      <description>Cannons will try to take you down./However, you can destroy them with your ship's weapons.</description>
       <points>1</points>
     </level>
     <level>
       <map>level5.tgl</map>
-      <name>Many canons!</name>
+      <name>Many cannons!</name>
       <description>Have fun in these initial levels destroying cannons/now that it's easy...</description>
       <points>1</points>
     </level>
     <level>
       <map>level6.tgl</map>
       <name>Doors and switches</name>
-      <description>Some levels have doors that can be open and closed/Find the proper switch and trigger it with the ball.</description>
+      <description>Some levels have doors that can be opened and closed./Find the proper switch and trigger it with the ball.</description>
       <points>2</points>
     </level>
     <level>
       <map>level7.tgl</map>
       <name>The first ability challenge</name>
-      <description>You will need to increase your skills on controlling/the ship if you want to navigate through narrow passages./Just go slowly and try to control the ship at all time.</description>
+      <description>You will need to increase your skills on controlling/the ship if you want to navigate through narrow passages./Just go slowly and try to control the ship at all times.</description>
       <points>2</points>
     </level>
     <level>
@@ -70,7 +70,7 @@
     <level>
       <map>level10.tgl</map>
       <name>Directional cannons</name>
-      <description>Pay attention to these guys,,,/They can track you and fire exactly at where you are.</description>
+      <description>Pay attention to these guys./They can track you and fire exactly where you are.</description>
       <points>3</points>
     </level>
     <level>
@@ -81,14 +81,14 @@
     </level>
     <level>
       <map>tgl-level2.tgl</map>
-      <name>Machineguns</name>
-      <description>Introducing machineguns!/These bullets are too small to destroy your ship/but they will for sure cause you trouble!</description>
+      <name>Machine guns</name>
+      <description>Introducing machine guns!/These bullets are too small to destroy your ship,/but they will cause you trouble for sure!</description>
       <points>2</points>
     </level>
     <level>
       <map>level11.tgl</map>
       <name>The first big level</name>
-      <description>Now that you have practiced the basics of transball/let's start with the real challenge!</description>
+      <description>Now that you have practiced the basics of Transball,/let's start with the real challenge!</description>
       <points>4</points>
     </level>
     <level>
@@ -100,19 +100,19 @@
     <level>
       <map>level13.tgl</map>
       <name>Death in the snow</name>
-      <description>If you don't like to see your ship destroyed/be careful and play slowly in this one./You will have to pass through some narrow passages...</description>
+      <description>If you don't like to see your ship destroyed,/be careful and play slowly in this one./You will have to pass through some narrow passages...</description>
       <points>4</points>
     </level>
     <level>
       <map>sa-level3.tgl</map>
       <name>High accuracy cannons</name>
-      <description>Look out for the red directional cannons.../They can surprise you!</description>
+      <description>Look out for these red directional cannons.../They can surprise you!</description>
       <points>3</points>
     </level>
     <level>
       <map>level14.tgl</map>
       <name>Choices</name>
-      <description>What do you prefer? lasers? tanks? cannons?</description>
+      <description>What do you prefer? Lasers? Tanks? Cannons?</description>
       <points>4</points>
     </level>
     <level>
@@ -142,7 +142,7 @@
     <level>
       <map>tgl-level4.tgl</map>
       <name>A tight space</name>
-      <description>You wlill have to navigate this one very carefully!</description>
+      <description>You will have to navigate this one very carefully!</description>
       <points>4</points>
     </level>
     <level>
